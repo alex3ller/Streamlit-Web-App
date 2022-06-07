@@ -21,4 +21,11 @@ st.area_chart(df)
 myslider = st.slider('Celsius')
 st.write(myslider, 'in Fahrenheit is', myslider * 9/5 + 32)
 
-print("End!")
+
+with open("report.pdf", "rb") as file:
+     btn = st.download_button(
+             label="Download Report",
+             data=file,
+             file_name="report.pdf",
+             mime="application/pdf"
+           )
