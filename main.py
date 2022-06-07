@@ -20,3 +20,5 @@ st.area_chart(df)
 
 myslider = st.slider('Celsius')
 st.write(myslider, 'in Fahrenheit is', myslider * 9/5 + 32)
+
+print("End!")
