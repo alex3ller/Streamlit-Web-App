@@ -29,3 +29,8 @@ with open("report.pdf", "rb") as file:
              file_name="report.pdf",
              mime="application/pdf"
            )
+
+username = st.text_input('Username', '')
+password = st.text_input('Password', '')
+st.write('Username is ', username)
+st.write('Password is ', password)
